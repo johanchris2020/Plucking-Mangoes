@@ -94,18 +94,18 @@ function draw() {
 
 //create mouseDragged function here
 function mouseDragged() {
-    Matter.Body.setPosition(rock.body, { x: mouseX, y: mouseY });
+    Matter.Body.setPosition(stoneObj.body, { x: mouseX, y: mouseY });
 }
 
 //create mouseReleased function here
 function mouseReleased() {
-    chain.fly();
+    rope.fly();
 }
 
 //create keyPressed function here
 function keyPressed() {
     if (keyCode === 32) {
-        Launcher.attatch();
+        Launcher.attach();
     }
 }
 
